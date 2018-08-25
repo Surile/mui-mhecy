@@ -1,0 +1,50 @@
+.mui-table-view-cell{
+	height:11rem;
+}
+.mui-table-view .mui-media-object{
+	max-width: 300px;
+	height: 8rem;
+}
+.mui-link{
+	width: 100%;
+	height: 30px;
+}
+.mui-link img{
+	width: 25px;
+	height: 25px;
+	float: left;
+	border: 1px solid #0062CC;
+	border-radius:12px;
+}
+.mui-link p{
+	color: #000000;
+	float: left;
+	line-height: 24px;
+	margin-left: 10px;
+}
+.mui-media-body{
+	word-wrap: break-all; 
+}
+.mui-media-body p{
+	width: 100%;
+	height: 70px;
+	white-space:pre-wrap;
+	word-wrap:break-word;
+	color:#22133D;
+	font-weight: normal;
+	padding:.35rem .7rem
+}
+.mui-link h6{
+	float: left;
+	line-height: 16px;
+	margin-left: 7px;
+}
+.mui-table-view-cell a{
+	float: left;
+}
+.mui-bar{
+	background-color: #FB7299;
+}
+.mui-title{
+	color: #FFFFFF;
+}

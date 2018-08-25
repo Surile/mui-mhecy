@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/mui.min.css" />
+		<link rel="stylesheet" href="css/actile.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/iconfont.css"/>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">主题帖</h1>
+		    <a id="more" class="mui-icon mui-icon-more  mui-pull-right"></a>
+		    <a id="filled" class="mui-icon mui-icon-star-filled mui-pull-right"></a>
+		    <a id="upload" class="mui-icon mui-icon-upload  mui-pull-right"></a>
+		</header>
+		<div class="mui-content">
+		   <div class="mui-card">
+			   <div class="mui-text-center mui-content-padded">
+			   		<h3>名字</h3>
+			   </div>		   	
+				<div class="mui-card-header mui-card-media">
+					<img src="http://placehold.it/40x30">
+					<div class="mui-media-body">
+						小M
+						<p>发表于 2016-06-30 15:30</p>
+					</div>
+				</div>
+				<div class="mui-card-content">
+					<div class="mui-card-content-inner">
+						<p>
+						这是一个最简单的卡片视图控件；卡片视图常用来显示完整独立的一段信息，比如一篇文章的预览图、作者信息、点赞数量等
+						这是一个最简单的卡片视图控件；卡片视图常用来显示完整独立的一段信息，比如一篇文章的预览图、作者信息、点赞数量等
+						这是一个最简单的卡片视图控件；卡片视图常用来显示完整独立的一段信息，比如一篇文章的预览图、作者信息、点赞数量等
+						这是一个最简单的卡片视图控件；卡片视图常用来显示完整独立的一段信息，比如一篇文章的预览图、作者信息、点赞数量等
+						这是一个最简单的卡片视图控件；卡片视图常用来显示完整独立的一段信息，比如一篇文章的预览图、作者信息、点赞数量等
+						这是一个最简单的卡片视图控件；卡片视图常用来显示完整独立的一段信息，比如一篇文章的预览图、作者信息、点赞数量等
+						</p>
+						<img src="http://placehold.it/400x300" alt="" width="100%">
+					</div>
+						<div class="mui-text-center">
+							<a id="" href="javascript:void(0);" class="mui-icon iconfont icon-zan"></a>
+							<p>111</p>
+						</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="mui-text-center mui-content-padded">
+			<button id="conment" type="button" class="mui-btn mui-btn-primary mui-btn-block">发表评论</button>
+		</div>
+		<div class="mui-card-footer">
+			<ul id="moli" class="mui-table-view">
+			    <li class="mui-table-view-cell mui-media">
+			        <a href="javascript:;">
+			            <img class="mui-media-object mui-pull-left" src="http://placehold.it/40x30">
+			            	<h6>小M</h6>
+			            	<h6>发表于 2016-06-30 15:30</h6>
+			            <div class="mui-media-body">
+			            	
+			                <p class="mui-ellipsis">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+			            </div>
+			        </a>
+			    </li>
+			    <li class="mui-table-view-cell mui-media">
+			        <a href="javascript:;">
+			            <img class="mui-media-object mui-pull-left" src="http://placehold.it/40x30">
+			            <div class="mui-media-body">
+			                <h6>小M</h6><h6>发表于 2016-06-30 15:30</h6>
+			                <p class="mui-ellipsis">想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
+			            </div>
+			        </a>
+			    </li>
+			    <div id="mui-p">
+			        <span><a href="javascript:void(0);">小M:</a></span><p class="mui-ellipsis">想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
+			    </div>
+			    <li class="mui-table-view-cell mui-media">
+			        <a href="javascript:;">
+			            <img class="mui-media-object mui-pull-left" src="http://placehold.it/40x30">
+			            <div class="mui-media-body">
+			               	<h6>小M</h6>
+			               	<h6>发表于 2016-06-30 15:30</h6>
+			               	
+			                <p class="mui-ellipsis">烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+			            </div>
+			            	
+			        </a>
+			    </li>
+			</ul>
+		</div>
+	<script type="text/javascript" src="js/mui.min.js" ></script>
+	<script>
+		mui.init();
+		var more = document.getElementById("more");
+		var filled = document.getElementById("filled");
+		var uplad = document.getElementById("upload");
+		more.addEventListener("click",function(){
+			var btnArray = [{title:"复制"},{title:"举报"}];
+			plus.nativeUI.actionSheet( {
+				cancel:"取消",
+				buttons:btnArray
+			}, function(e){
+				var index = e.index;
+				switch (index){
+					case 1:
+						mui.toast("复制成功")
+						break;
+					case 2:
+						mui.toast("举报成功")
+						break;
+						
+				}
+				
+			} );
+		});
+		filled.addEventListener("click",function(){
+			mui.toast("收藏成功")
+		})
+		uplad.addEventListener("click",function(){
+			var btnArray = [{title:"新浪微博"},{title:"微信"},{title:"朋友圈"},{title:"QQ"},{title:"QQ空间"},{title:"复制链接"}];
+			plus.nativeUI.actionSheet({
+				cancel:"取消",
+				buttons:btnArray
+			},function(e){
+				var index = e.index;
+				switch(index){
+					case 1:
+						mui.toast("打开成功");
+						break;
+					case 2:
+						mui.toast("打开成功");
+						break;
+					case 3:
+						mui.toast("打开成功");
+						break;
+					case 4:
+						mui.toast("打开成功");
+						break;
+					case 5:
+						mui.toast("打开成功");
+						break;
+					case 6:
+						mui.toast("分享成功");
+						break;
+				}
+			})
+		})		
+		var lia = document.getElementById("moli");
+		lia.addEventListener("click",function(){
+			mui.openWindow("comment.html")
+		})
+		var conment = document.getElementById("conment");
+		conment.addEventListener('click',function(){
+			mui.openWindow("comment.html")
+		})
+		
+		
+	</script>
+	</body>
+</html>
