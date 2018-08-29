@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/mui.min.css" />
+	</head>
+		<style>
+			.mui-bar{
+				background-color: #FB7299;
+				line-height: 44px;
+			}
+			.mui-title,.mui-pull-left,.mui-pull-right{
+				color: #FFFFFF;
+			}
+			.mui-input-row textarea{
+				width: 100%;
+				height: 400px;
+				min-height: auto;
+				border-top:1px solid rgba(102, 102, 102, 0.22);
+			}
+			.mui-bar-nav~.mui-content{
+				padding-top: 45px;
+			}
+			.file {
+			    position: relative;
+			    display: inline-block;
+			    border-radius: 4px;
+			    padding: 4px 12px;
+			    overflow: hidden;
+			    color: #1E88C7;
+			    text-decoration: none;
+			    text-indent: 0;
+			    line-height: 20px;
+			    width: 128px;
+			    height: 132px;
+			    background-image: url(../conmon/login/images/iconfont-tianjia.png);
+			}
+			.file input {
+			    position: absolute;
+			    font-size: 100px;
+			    right: 0;
+			    top: 0;
+			    opacity: 0;
+			}
+			.file:hover {
+			    color: #004974;
+			    text-decoration: none;
+			}
+			input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea{
+				border: 1px solid rgba(0, 0, 0, 0)
+				
+			}
+			a:active{
+				opacity:.3;
+				color: #FFFFFF;
+			}
+		</style>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a id="back" class="mui-pull-left">取消</a>
+		    <h1 class="mui-title">新帖子</h1>
+		    <a id="fs" class="mui-pull-right">发送</a>
+		</header>
+		<div class="mui-content">
+		    <div class="mui-input-row">
+		       <input type="text" placeholder="请输入标题">
+		    </div>
+		    <div class="mui-input-row" style="margin-top:-15px">
+				<textarea id="textarea"  placeholder="请输入内容"></textarea>
+			</div>
+			<div class="mui-input-row" style="width:100%;height:132px;background-color: #FFFFFF;margin-top:-20px;">
+				<div class="file">
+					<input onclick="galleryImg()" id="fileId1" type="file"  name="file" />
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/mui.min.js" ></script>
+	<script>
+		mui.init();
+		var backa = document.getElementById("back");
+		var fsa = document.getElementById("fs");
+		var textinput = document.querySelector("input[type='text']");
+		var textareainput = document.getElementById('textarea');
+		var inputfile = document.querySelector('input[type="file"]');
+		backa.addEventListener("click",function(){
+			if(textinput.value === "" && textareainput.value === "" && inputfile.value ==="" ){
+				mui.back();
+				return;
+			}
+			if(textinput.value!=""||textareainput.value!=""||inputfile.value !=""){
+				var btnArry = ["确认退出","取消"];
+				mui.confirm("有尚未发送的内容，真的要退出么？","(;´༎ຶД༎ຶ`)",btnArry,function(e){
+					if(e.index==0){
+						mui.back();
+					}else{
+						return;
+					}
+				})
+			}
+		})
+		fsa.addEventListener("click",function(){
+			if(textinput.value === "" || textareainput.value === ""){
+				mui.toast("标题或内容不能为空");
+				return;
+			}
+			if(textinput.value!=""||textareainput.value!=""){
+				mui.openWindow("actile.html");
+				mui.toast("发送成功");
+			}
+		})
+	// 从相册中选择图片
+		function galleryImg(){
+			// 从相册中选择图片
+			
+		    plus.gallery.pick(function(path){
+		    	//outLine(path);
+		        //showImg( path );
+		        //createItem(path);
+		    }, function(e){
+		    	outSet('取消选择图片');
+		    }, {filter:'image'});
+		}
+	</script>
+	<script type="text/javascript" src="js/immersed.js" ></script>
+</html>

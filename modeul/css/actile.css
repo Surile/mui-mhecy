@@ -1,0 +1,87 @@
+/*body{
+	background-color: #FFFFFF;
+}*/
+.mui-content-padded{
+	margin: 15px;
+}
+.mui-bar{
+	background-color: #FB7299;
+}
+.mui-title{
+	color: #FFFFFF;
+}
+.mui-bar a{
+	color: #FFFFFF;
+}
+.mui-content{
+	background-color: #FFFFFF;
+}
+.mui-text-center h5{
+	white-space:pre-wrap;
+}
+/*.mui-card{
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: rgba(0, 0, 0, 0.04);
+}*/
+.mui-card-footer:before, .mui-card-header:after{
+	height: 0px;
+}
+.mui-card-content img{
+	padding: 20px;
+}
+.mui-card-content-inner{
+	padding: 20px;
+}
+.mui-card{
+	box-shadow: inherit;
+}
+.mui-card-footer{
+/*	border: 1px solid #000000;
+*/	padding: 10px 0px;
+	width: 100%;
+}
+.mui-table-view-cell p{
+	white-space:pre-wrap;
+	
+}
+.mui-table-view{
+	width: 100%;
+}
+p{
+	color: #000000;
+}
+
+
+#mui-p{
+	padding-top: 10px;
+	padding-left: 62px;
+	margin-left:15px;
+	border-bottom: 1px solid rgba(200, 199, 204, 0.74);
+}
+#mui-p p{
+	white-space:pre-wrap;
+}
+#mui-p span{
+	font-size: 14px;
+	float: left;
+}
+
+
+.icon-zan:before{
+	font-size: 60px;
+}
+.mui-text-center p{
+	padding-top: 20px;
+}
+.mui-bar-nav.mui-bar .mui-icon{
+	margin-right: 0px;
+}
+.mui-btn-primary{
+	background-color: #FB7299;
+	border: 1px solid #FB7299;
+}
+.mui-btn-primary:enabled:active{
+	background-color: #FB7299;
+	border: 1px solid #FB7299;
+}

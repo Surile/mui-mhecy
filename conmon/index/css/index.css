@@ -1,0 +1,45 @@
+
+.mui-slider img{
+	height: 130px;
+}
+.mui-segmented-control{
+	margin-top:0.5rem;
+}
+.mui-content h5{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 15px;
+	background-color: #FFFFFF;
+}
+.mui-bar{
+	background-color: #FB7299;
+}
+.mui-title{
+	color: #FFFDEF;
+}
+.mui-segmented-control.mui-scroll-wrapper .mui-scroll{
+	width: 100%;
+	
+}
+.mui-segmented-control.mui-scroll-wrapper .mui-control-item{
+	width: 50%;
+	color: #999999;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+	color: #FFFFFF;
+	background-color: #FB7299;
+}
+
+
+
+
+.mui-bar-nav~.mui-content .mui-slider.mui-fullscreen{
+	top: 167px;
+}
+.mui-slider .mui-fullscreen{
+	height: auto;
+}
+.mui-fullscreen .mui-segmented-control~.mui-slider-group{
+	top: 47px;
+}
